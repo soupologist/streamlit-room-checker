@@ -65,6 +65,7 @@ df = df.ffill()
 
 # Query 1: Find free rooms
 st.header("Check Free Rooms")
+st.write("The app works only during Midsem week from 3rd March to 8th March. Enter times from 9 AM to 6 PM only.")
 query_date = st.date_input("Select Date", min_value=df["Date"].min(), max_value=df["Date"].max())
 query_time = st.time_input("Select Time")
 if st.button("Find Free Rooms"):
